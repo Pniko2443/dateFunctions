@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>dateFunctions Testing of Script</title>
+<link href="styles.css" rel="stylesheet" type="text/css" />
+<! Add dateFunctions.js below -->
+<script src="dateFunctions.js"></script>
+</head>
+<body>
+<p>
+<!-- days till end of year -->
+<script>
+today = new Date();
+thisMonth = today.getMonth();
+/* Updates month array number to 1-12 */
+thisMonth = (thisMonth * 1) + 1;
+thisDay = today.getDate();
+thisYear = today.getFullYear();
+<!-- Add date output statement -->
+document.write("Date is ",getMonthName(thisMonth)," ",thisDay,", ",thisYear);
+document.write("<br>", endYearDayCount(today)," days until end of year.");
+document.write("<br>", "Day number is ", getDayNumber(today), " aka ",getDayName(today));
+</script>
+</p>
+</body>
+</html>
